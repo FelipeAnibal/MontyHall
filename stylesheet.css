@@ -1,0 +1,69 @@
+/* The style for the doors is not originaly mine, I got it from
+https://codepen.io/am_eu/pen/EgZdaQ and adapted a few things - mostly the colors*/
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: #54617a !important;
+  color: #f6f6f6;
+}
+
+.backDoor {
+  background-color: #f5f5f5;
+  /* border: 1px solid gray; */
+  position:relative;
+  width:100px;
+  height:150px;
+  margin: 0 auto;
+  margin-top:50px;
+}
+
+.right-door{
+  background-color: #36a2eb;
+}
+
+.left-door{
+  background-color: rgba(75, 192, 192);
+}
+
+.door {
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100px;
+  height:150px;
+ 
+  transform-origin: left;
+  /*Speed of the Door animation*/
+  transition: all 0.5s ease-in-out;
+}
+
+.doorOpen {
+  /*prespectiv creates the door open effect*/
+  transform: perspective(1200px) translateZ(0px) translateX(0px) translateY(0px) rotateY(-105deg);
+}
+
+.prize {
+  text-align: center;
+  width: 100px;
+  margin: auto;
+  padding: 60px 0;
+  color:#54617a;
+  font-family: "Montserrat", sans-serif;
+  font-size: 110%;
+}
+
+
+h1, h2 {
+  font-weight: 600;
+  color: #f6f6f6;
+}
+
+.navbar a{
+  color: #f6f6f6;
+  text-decoration: solid underline #ffffffee 2px;
+}
+
+.navbar p{
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  color: #f6f6f6;
+}
